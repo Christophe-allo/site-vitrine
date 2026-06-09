@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react'
 import { CheckIcon, ShieldCheckIcon } from 'lucide-react'
-import { motion, useInView } from 'framer-motion'
+import { motion, useInView } from 'motion/react'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'

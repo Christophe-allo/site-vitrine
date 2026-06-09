@@ -736,6 +736,8 @@ const HeroSection = () => {
                 <br />
                 Un agent codé de A à Z, pas une IA qui hallucine ou improvise ses réponses.
                 <br />
+                Pas de données envoyées à OpenAI.
+                <br />
                 Réponses aux questions des patients générées 5x plus vite que les agents IA,
                 <br />
                 pour une conversation plus fluide.

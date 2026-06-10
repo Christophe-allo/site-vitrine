@@ -738,9 +738,9 @@ const HeroSection = () => {
                 <br />
                 Pas de données envoyées à OpenAI.
                 <br />
-                Réponses aux questions des patients générées 5x plus vite que les agents IA,
+                Gestion des rappels, annulations et déplacements de rendez-vous.
                 <br />
-                pour une conversation plus fluide.
+                Hiérarchisation des urgences.
               </p>
 
               <div className='flex flex-wrap items-center justify-start gap-4'>

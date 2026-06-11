@@ -298,7 +298,12 @@ const HeroNavigationSmallScreen = ({
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <PrimaryOrionButton className={cn('inline-flex size-10 px-0 lg:hidden', triggerClassName)}>
+        <PrimaryOrionButton
+          className={cn(
+            'inline-flex size-10 rounded-full border border-blue-600 bg-white px-0 text-blue-600 shadow-none hover:bg-blue-50 lg:hidden',
+            triggerClassName
+          )}
+        >
           <MenuIcon />
           <span className='sr-only'>Menu</span>
         </PrimaryOrionButton>

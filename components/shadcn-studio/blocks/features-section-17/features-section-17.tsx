@@ -131,13 +131,13 @@ const Features = ({ sections }: FeaturesProps) => {
                   ) : section.hideImage ? (
                     <>
                       <div className='pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(color-mix(in_oklab,var(--primary)10%,transparent)_2px,transparent_2px)] bg-[size:20px_20px]' />
-                      <div className='absolute left-6 top-[39px] z-10 h-[60px] w-[200px] rounded-md bg-white shadow-md'>
-                        <div className='absolute -top-5 left-0 flex items-center gap-1.5 rounded-t-md bg-[color-mix(in_oklab,var(--color-sky-600)20%,var(--background))] px-2 py-1 text-sky-600'>
-                          <PhoneIcon className='size-3.5' />
-                          <span className='text-xs font-medium'>Message patient</span>
+                      <div className='absolute left-6 top-[39px] z-10 h-[60px] w-[200px] rounded-md bg-white shadow-md max-sm:h-[30px] max-sm:w-[100px]'>
+                        <div className='absolute -top-5 left-0 flex items-center gap-1.5 rounded-t-md bg-[color-mix(in_oklab,var(--color-sky-600)20%,var(--background))] px-2 py-1 text-sky-600 max-sm:-top-4 max-sm:gap-1 max-sm:px-1.5 max-sm:py-0.5'>
+                          <PhoneIcon className='size-3.5 max-sm:size-2.5' />
+                          <span className='text-xs font-medium max-sm:text-[8px]'>Message patient</span>
                         </div>
-                        <div className='flex h-full items-center px-3'>
-                          <p className='text-sm text-muted-foreground'>
+                        <div className='flex h-full items-center px-3 max-sm:px-1.5'>
+                          <p className='text-sm text-muted-foreground max-sm:text-[8px] max-sm:leading-[1.05]'>
                             Je veux{' '}
                             <motion.span
                               className='font-bold'
@@ -157,13 +157,13 @@ const Features = ({ sections }: FeaturesProps) => {
                           </p>
                         </div>
                       </div>
-                      <div className='absolute left-6 top-1/2 z-10 h-[60px] w-[200px] -translate-y-1/2 rounded-md bg-white shadow-md'>
-                        <div className='absolute -top-5 left-0 flex items-center gap-1.5 rounded-t-md bg-[color-mix(in_oklab,var(--color-sky-600)20%,var(--background))] px-2 py-1 text-sky-600'>
-                          <PhoneIcon className='size-3.5' />
-                          <span className='text-xs font-medium'>Message patient</span>
+                      <div className='absolute left-6 top-1/2 z-10 h-[60px] w-[200px] -translate-y-1/2 rounded-md bg-white shadow-md max-sm:h-[30px] max-sm:w-[100px]'>
+                        <div className='absolute -top-5 left-0 flex items-center gap-1.5 rounded-t-md bg-[color-mix(in_oklab,var(--color-sky-600)20%,var(--background))] px-2 py-1 text-sky-600 max-sm:-top-4 max-sm:gap-1 max-sm:px-1.5 max-sm:py-0.5'>
+                          <PhoneIcon className='size-3.5 max-sm:size-2.5' />
+                          <span className='text-xs font-medium max-sm:text-[8px]'>Message patient</span>
                         </div>
-                        <div className='flex h-full items-center px-3'>
-                          <p className='text-sm text-muted-foreground'>
+                        <div className='flex h-full items-center px-3 max-sm:px-1.5'>
+                          <p className='text-sm text-muted-foreground max-sm:text-[8px] max-sm:leading-[1.05]'>
                             J&apos;ai{' '}
                             <motion.span
                               className='font-bold'
@@ -183,13 +183,13 @@ const Features = ({ sections }: FeaturesProps) => {
                           </p>
                         </div>
                       </div>
-                      <div className='absolute bottom-6 left-6 z-10 h-[60px] w-[200px] rounded-md bg-white shadow-md'>
-                        <div className='absolute -top-5 left-0 flex items-center gap-1.5 rounded-t-md bg-[color-mix(in_oklab,var(--color-sky-600)20%,var(--background))] px-2 py-1 text-sky-600'>
-                          <PhoneIcon className='size-3.5' />
-                          <span className='text-xs font-medium'>Message patient</span>
+                      <div className='absolute bottom-6 left-6 z-10 h-[60px] w-[200px] rounded-md bg-white shadow-md max-sm:h-[30px] max-sm:w-[100px]'>
+                        <div className='absolute -top-5 left-0 flex items-center gap-1.5 rounded-t-md bg-[color-mix(in_oklab,var(--color-sky-600)20%,var(--background))] px-2 py-1 text-sky-600 max-sm:-top-4 max-sm:gap-1 max-sm:px-1.5 max-sm:py-0.5'>
+                          <PhoneIcon className='size-3.5 max-sm:size-2.5' />
+                          <span className='text-xs font-medium max-sm:text-[8px]'>Message patient</span>
                         </div>
-                        <div className='flex h-full items-center px-3'>
-                          <p className='text-sm text-muted-foreground'>
+                        <div className='flex h-full items-center px-3 max-sm:px-1.5'>
+                          <p className='text-sm text-muted-foreground max-sm:text-[8px] max-sm:leading-[1.05]'>
                             Je{' '}
                             <motion.span
                               className='font-bold'
@@ -209,12 +209,12 @@ const Features = ({ sections }: FeaturesProps) => {
                           </p>
                         </div>
                       </div>
-                      <div className='absolute right-6 top-1/2 z-10 h-[60px] w-[200px] -translate-y-1/2 rounded-md bg-white shadow-md'>
-                        <div className='absolute -top-5 left-0 flex items-center gap-1.5 rounded-t-md bg-[color-mix(in_oklab,var(--color-green-600)20%,var(--background))] px-2 py-1 text-green-600'>
-                          <CircleCheckIcon className='size-3.5' />
-                          <span className='text-xs font-medium'>Output</span>
+                      <div className='absolute right-6 top-1/2 z-10 h-[60px] w-[200px] -translate-y-1/2 rounded-md bg-white shadow-md max-sm:right-[54px] max-sm:h-[30px] max-sm:w-[100px] md:max-lg:right-[104px]'>
+                        <div className='absolute -top-5 left-0 flex items-center gap-1.5 rounded-t-md bg-[color-mix(in_oklab,var(--color-green-600)20%,var(--background))] px-2 py-1 text-green-600 max-sm:-top-4 max-sm:gap-1 max-sm:px-1.5 max-sm:py-0.5'>
+                          <CircleCheckIcon className='size-3.5 max-sm:size-2.5' />
+                          <span className='text-xs font-medium max-sm:text-[8px]'>Output</span>
                         </div>
-                        <p className='flex h-full items-center px-3 text-sm text-muted-foreground'>
+                        <p className='flex h-full items-center px-3 text-sm text-muted-foreground max-sm:px-1.5 max-sm:text-[8px] max-sm:leading-[1.05]'>
                           Bonjour Mr Dujean, quelles sont vos disponibilités ?
                         </p>
                       </div>

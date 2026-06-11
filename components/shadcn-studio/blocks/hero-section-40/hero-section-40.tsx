@@ -312,7 +312,7 @@ const tabsData = [
     ),
     title: 'Contrôle et optimisation',
     description:
-      "Une fois l'intallation complété nous garantissons un contrôle et suivi quotidien des automatisations.\nActivez ou désactivez Alloclinic selon vos besoin."
+      "Une fois l'intallation complété nous garantissons un contrôle et suivi quotidien des automatisations.\nActivez ou désactivez Alloclinic selon vos besoins"
   }
 ]
 
@@ -724,7 +724,7 @@ const HeroSection = () => {
                 </div>
               )}
             </div>
-            <div className={cn('relative z-10 ml-[20px] translate-y-[10px] max-w-2xl flex-col items-start gap-4 text-left', showCalendar ? 'hidden' : 'flex')}>
+            <div className={cn('relative z-10 ml-[20px] -translate-y-[70px] max-w-2xl flex-col items-start gap-4 text-left lg:translate-y-[10px]', showCalendar ? 'hidden' : 'flex')}>
               <h1 className='-translate-x-[30px] font-[family-name:var(--font-montserrat)] text-lg font-semibold text-black sm:text-xl lg:text-3xl lg:leading-[1.15]'>
                 Décrochez 100% des appels reçus
                 <br />
@@ -747,10 +747,10 @@ const HeroSection = () => {
                 <button
                   type='button'
                   onPointerDown={showCalendarCard}
-                  className='group/button relative z-30 inline-flex h-10 -translate-x-[30px] translate-y-[50px] shrink-0 items-center justify-center gap-1.5 rounded-full border border-transparent bg-blue-600 bg-clip-padding px-6 font-[family-name:var(--font-montserrat)] text-base font-medium whitespace-nowrap text-white shadow-none transition-all outline-none select-none hover:bg-blue-500 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 max-[425px]:has-[>svg]:px-4 [&_svg]:pointer-events-none [&_svg]:shrink-0'
+                  className='group/button relative z-30 inline-flex h-8 -translate-x-[30px] translate-y-[0px] shrink-0 items-center justify-center gap-1.5 rounded-full border border-transparent bg-blue-600 bg-clip-padding px-4 font-[family-name:var(--font-montserrat)] text-sm font-medium whitespace-nowrap text-white shadow-none transition-all outline-none select-none hover:bg-blue-500 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 md:translate-y-[0px] lg:h-10 lg:px-6 lg:text-base lg:translate-y-[50px] max-[425px]:has-[>svg]:px-4 [&_svg]:pointer-events-none [&_svg]:shrink-0'
                 >
                   Tester agent
-                  <PhoneIcon className='size-4 -scale-x-100' />
+                  <PhoneIcon className='size-3.5 -scale-x-100 lg:size-4' />
                 </button>
               </div>
             </div>
@@ -767,7 +767,7 @@ const HeroSection = () => {
       </div>
       <FeaturesSection09 tabs={featureSection09TabsData} />
 
-      <div className='px-4 pt-[100px] sm:px-6 lg:px-8'>
+      <div className='px-4 pt-[150px] sm:px-6 sm:pt-[100px] lg:px-8'>
         <h2 className='mx-auto max-w-7xl text-center font-[family-name:var(--font-montserrat)] text-2xl font-semibold md:text-3xl lg:text-4xl'>
           Plus prévisible qu’un agent IA. Plus rapide aussi.
         </h2>

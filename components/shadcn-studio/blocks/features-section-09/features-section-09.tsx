@@ -681,12 +681,12 @@ const Features = ({ tabs }: { tabs: tabsData }) => {
 
         <Tabs defaultValue='upload-files' className='gap-8 sm:gap-16 xl:gap-24'>
           <MotionPreset fade blur slide={{ direction: 'left', offset: 50 }} delay={0.4} transition={{ duration: 0.5 }}>
-            <TabsList className='group-data-horizontal/tabs:h-full max-sm:w-full max-sm:flex-col'>
+            <TabsList className='group-data-horizontal/tabs:h-full max-sm:h-auto max-sm:w-full max-sm:flex-col max-sm:items-stretch max-sm:gap-2 max-sm:bg-transparent max-sm:p-0'>
               {tabs.map(({ icon, name, value }) => (
                 <TabsTrigger
                   key={value}
                   value={value}
-                  className='text-muted-foreground data-[state=active]:text-blue-600 flex items-center gap-1 px-2.5 max-sm:w-full sm:px-3'
+                  className='text-muted-foreground data-[state=active]:text-blue-600 flex items-center gap-1 px-2.5 max-sm:mx-auto max-sm:w-[92%] max-sm:justify-start max-sm:rounded-md max-sm:px-3 max-sm:py-1.5 max-sm:data-[state=inactive]:bg-blue-50 max-sm:data-[state=active]:bg-background max-sm:data-[state=active]:shadow-sm sm:px-3'
                 >
                   {icon}
                   {name}
@@ -716,17 +716,21 @@ const Features = ({ tabs }: { tabs: tabsData }) => {
                 </MotionPreset>
 
                 <MotionPreset fade blur zoom={{ initialScale: 0.75 }} transition={{ duration: 0.7 }}>
-                  <div className='flex h-103 w-118 items-center justify-center'>
+                  <div className='flex h-103 w-118 items-center justify-center max-sm:h-[330px] max-sm:w-full max-sm:overflow-visible'>
                     {tab.content.visual === 'calendar' ? (
-                      <div className='translate-x-5'>
+                      <div className='translate-x-5 max-sm:translate-x-[46px] max-sm:scale-[0.67]'>
                         <CalendarRangeSingleMonthDemo />
                       </div>
                     ) : tab.content.visual === 'settings' ? (
                       <PractitionerSettingsDemo />
                     ) : tab.content.visual === 'appointment' ? (
-                      <AppointmentBookingDemo animateTitle showContinueButton={false} />
+                      <div className='max-sm:translate-y-[60px] max-sm:scale-[0.67]'>
+                        <AppointmentBookingDemo animateTitle showContinueButton={false} />
+                      </div>
                     ) : tab.content.visual === 'simultaneousCalls' ? (
-                      <SimultaneousCallsDemo />
+                      <div className='max-sm:scale-[0.67]'>
+                        <SimultaneousCallsDemo />
+                      </div>
                     ) : (
                       <>
                         <img src={tab.content.image} alt={tab.name} className='h-full w-full object-contain dark:hidden' />

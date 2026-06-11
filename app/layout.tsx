@@ -25,6 +25,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Alloclinic",
   description: "Landing page frontend for Alloclinic.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

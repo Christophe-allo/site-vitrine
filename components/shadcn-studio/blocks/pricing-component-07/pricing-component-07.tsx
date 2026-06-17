@@ -159,11 +159,11 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
                       </p>
                       {plan.id === 'free' ? (
                         <p className='font-[family-name:var(--font-montserrat)] text-xs font-semibold text-gray-500'>
-                          Confirmation via Whatsapp
+                          500 appels par mois
                         </p>
                       ) : plan.id === 'business' ? (
                         <p className='font-[family-name:var(--font-montserrat)] text-xs font-semibold text-gray-500'>
-                          Confirmation via SMS
+                          750 appels par mois
                         </p>
                       ) : plan.subtitle ? (
                         <p className='font-[family-name:var(--font-montserrat)] text-xs font-semibold text-black'>
@@ -207,9 +207,9 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
                   : selectedPlanData.name}
               </h3>
               {selectedPlanData.id === 'free' ? (
-                <p className='text-base text-white'>Messages confirmation via Whatsapp</p>
+                <p className='text-base text-white'>500 appels par mois</p>
               ) : selectedPlanData.id === 'business' ? (
-                <p className='text-base text-white'>Mesages confirmation via SMS</p>
+                <p className='text-base text-white'>750 appels par mois</p>
               ) : selectedPlanData.subtitle ? (
                 <p className='text-base text-white'>{selectedPlanData.subtitle}</p>
               ) : null}

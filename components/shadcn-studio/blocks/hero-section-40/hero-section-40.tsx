@@ -5,7 +5,6 @@ import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { PrimaryOrionButton } from '@/components/ui/orion-button'
 import { cn } from '@/lib/utils'
-import { motion } from 'motion/react'
 
 import LeadQualifier from '@/components/shadcn-studio/blocks/hero-section-40/lead-qualifier'
 import MeetingPrep from '@/components/shadcn-studio/blocks/hero-section-40/meeting-prep'
@@ -183,49 +182,6 @@ const deterministicSectionsData = [
       alt: 'Financial Dashboard'
     },
     hideImage: true
-  },
-  {
-    badge: 'réduction du temps de latence',
-    contentClassName: 'lg:-ml-[60px] lg:w-[calc(100%+60px)]',
-    title: (
-      <>
-        Une vitesse de réponse{' '}
-        <motion.span
-          className='font-bold'
-          animate={{ color: ['var(--color-sky-400)', 'var(--color-blue-600)', 'var(--color-sky-400)'] }}
-          transition={{ duration: 4, ease: 'easeInOut', repeat: Infinity }}
-        >
-          5x
-        </motion.span>{' '}
-        plus rapide que les agents IA.
-      </>
-    ),
-    description: 'La latence des réponses peut créer du doute, casser l’échange et faire décrocher le patient. C’est pourquoi les réponses de l\'agent Alloclinic sont sous les 300 ms.',
-    features: [
-      {
-        title: 'Une expérience plus fluide :',
-        description: (
-          <>
-            la réponse arrive immédiatement
-            <br />
-            (&lt; 300 ms), le patient ne se demande pas si l’agent cherche ou a mal compris.
-          </>
-        )
-      },
-      {
-        title: 'Une meilleure conversion :',
-        description: 'moins d’abandon et d’agacement liés aux délais de réponse souvent perçus avec les IA génératives, plus de rendez-vous menés au bout.'
-      },
-      {
-        title: 'La réputation du cabinet :',
-        description: 'chaque échange reflète le sérieux et la qualité de votre cabinet.'
-      }
-    ],
-    image: {
-      src: '/images/features-bottom.jpg',
-      alt: 'Dashboard Wireframe'
-    },
-    showSpeedometer: true
   }
 ]
 
@@ -734,11 +690,9 @@ const HeroSection = () => {
               <p className='max-w-2xl -translate-x-[30px] text-[15px] text-black sm:text-[17px]'>
                 Notre agent numérique est spécialisé dans les centres de santé multi-praticiens.
                 <br />
-                Un agent codé de A à Z, pas une IA qui hallucine ou improvise ses réponses.
-                <br />
-                Pas de données envoyées à OpenAI.
-                <br />
                 Gestion des rappels, annulations et déplacements de rendez-vous.
+                <br />
+                Temps de consultation en fonction motif du rendez-vous.
                 <br />
                 Hiérarchisation des urgences.
               </p>
@@ -767,13 +721,7 @@ const HeroSection = () => {
       </div>
       <FeaturesSection09 tabs={featureSection09TabsData} />
 
-      <div className='px-4 pt-[150px] sm:px-6 sm:pt-[100px] lg:px-8'>
-        <h2 className='mx-auto max-w-7xl text-center font-[family-name:var(--font-montserrat)] text-2xl font-semibold md:text-3xl lg:text-4xl'>
-          Plus prévisible qu’un agent IA. Plus rapide aussi.
-        </h2>
-      </div>
-      <Features sections={deterministicSectionsData} />
-      <div className='px-4 pt-[100px] sm:px-6 lg:px-8'>
+      <div className='px-4 pt-[20px] sm:px-6 lg:px-8'>
         <h2 className='mx-auto max-w-7xl text-center font-[family-name:var(--font-montserrat)] text-2xl font-semibold md:text-3xl lg:text-4xl'>
           L&apos;avantage d&apos;utiliser Alloclinic
         </h2>
@@ -791,6 +739,12 @@ const HeroSection = () => {
           </PrimaryOrionButton>
         </div>
       </div>
+      <div className='px-4 pt-[150px] sm:px-6 sm:pt-[100px] lg:px-8'>
+        <h2 className='mx-auto max-w-7xl text-center font-[family-name:var(--font-montserrat)] text-2xl font-semibold md:text-3xl lg:text-4xl'>
+          Plus prévisible qu’un agent IA.
+        </h2>
+      </div>
+      <Features sections={deterministicSectionsData} />
       <div id='use-cases' ref={tabsSectionRef} className='scroll-mt-20'>
         <Tabs
           value={activeTab}
@@ -800,7 +754,7 @@ const HeroSection = () => {
           data-horizontal
           className='mt-[280px] w-full gap-0'
         >
-          <div className='-mt-[120px] px-4 pb-[100px] sm:px-6 lg:px-8'>
+          <div className='-mt-[200px] px-4 pb-[100px] sm:px-6 lg:px-8'>
             <h2 className='mx-auto max-w-7xl text-center font-[family-name:var(--font-montserrat)] text-2xl font-semibold md:text-3xl lg:text-4xl'>
               Les fonctionnalités d&apos;Alloclinic
             </h2>

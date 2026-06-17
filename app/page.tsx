@@ -100,7 +100,7 @@ const plans: Plan[] = [
     features: [
       'Audit logiciels télésecrétariat (offert)',
       'Intégration de Alloclinic',
-      '500 appels par mois',
+      '750 appels par mois',
       'Deterministic Conversational Mapping ©',
       'Message confirmation de rendez-vous',
       'Notification de rappel',

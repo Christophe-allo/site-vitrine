@@ -101,7 +101,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
             slide={{ direction: 'down', offset: 50 }}
             transition={{ duration: 0.5 }}
           >
-            Choisissez le meilleur plan pour votre cabinet
+            Une tarification simple et transparente
           </MotionPreset>
           <MotionPreset
             component='p'
@@ -112,13 +112,11 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
             delay={0.1}
             transition={{ duration: 0.5 }}
           >
+            <span className='text-2xl font-bold sm:text-3xl lg:text-4xl'>219 €/mois</span>
+            <br />
             Appels illimités
             <br />
-            Confirmation et rappels de rendez-vous via Whatsapp ou SMS
-            <br />
-            Rappel si non confirmation patient
-            <br />
-            <span className='font-bold text-blue-600'>2 mois d&apos;essai satisfait ou 100% remboursé</span>
+            <span className='font-bold text-blue-600'>2 mois d&apos;essai, satisfait ou 100 % remboursé</span>
           </MotionPreset>
         </div>
         <div className='flex flex-col gap-6 lg:flex-row'>
@@ -159,7 +157,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
                       </p>
                       {plan.id === 'free' ? (
                         <p className='font-[family-name:var(--font-montserrat)] text-xs font-semibold text-gray-500'>
-                          500 appels par mois
+                          Appels illimités
                         </p>
                       ) : plan.id === 'business' ? (
                         <p className='font-[family-name:var(--font-montserrat)] text-xs font-semibold text-gray-500'>
@@ -207,7 +205,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
                   : selectedPlanData.name}
               </h3>
               {selectedPlanData.id === 'free' ? (
-                <p className='text-base text-white'>500 appels par mois</p>
+                <p className='text-base text-white'>Appels illimités</p>
               ) : selectedPlanData.id === 'business' ? (
                 <p className='text-base text-white'>750 appels par mois</p>
               ) : selectedPlanData.subtitle ? (

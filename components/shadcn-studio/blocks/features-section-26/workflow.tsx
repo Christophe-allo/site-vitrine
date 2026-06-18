@@ -234,7 +234,7 @@ const Workflow = ({
                 showExecutionSummary ? 'text-green-600 dark:text-green-400' : 'text-sky-600 dark:text-sky-400'
               )}
             >
-              {showExecutionSummary ? "Résumé de l'installation" : 'Connection au logiciel'}
+              {showExecutionSummary ? "Résumé de l'installation" : 'Connexion au logiciel'}
             </motion.span>
             <MoreVerticalIcon className={cn(
                                       'size-4',

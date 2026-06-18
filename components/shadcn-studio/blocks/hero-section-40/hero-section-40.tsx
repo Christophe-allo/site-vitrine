@@ -162,6 +162,10 @@ const deterministicSectionsData = [
         description: 'chaque réponse suit un parcours codé et validé.'
       },
       {
+        title: 'Pas de données envoyées à OpenAI :',
+        description: 'les informations patients restent sous contrôle, sans exposition à un modèle externe.'
+      },
+      {
         title: 'Notre technologie DCM :',
         description: 'génère des réponses programmées à partir du contexte et de mots-clés précis, évitant ainsi les réponses improvisées que peuvent parfois produire les agents IA.'
       },
@@ -248,7 +252,7 @@ const tabsData = [
     icon: (
       <SearchIcon />
     ),
-    title: 'Audit de votre instalation médicale',
+    title: 'Audit de votre installation médicale',
     description:
       'Audit de vos logiciels médicaux, du volume d’appels et de vos workflows afin de concevoir une intégration sur mesure de l’accueil téléphonique automatisé.'
   },
@@ -257,9 +261,9 @@ const tabsData = [
     icon: (
       <PlugIcon />
     ),
-    title: 'Connection à vos logiciels médicaux',
+    title: 'Connexion à vos logiciels médicaux',
     description:
-      'Connection de Alloclinic à vos logiciels médicaux, via des API sécurisées. Intégration des données d’appel à vos outils existant, sans changement de logiciel pour votre équipe. Installation sous 15 jours.'
+      'Connexion d’Alloclinic à vos logiciels médicaux, via des API sécurisées. Intégration des données d’appel à vos outils existants, sans changement de logiciel pour votre équipe. Installation sous 15 jours.'
   },
   {
     id: 'review-and-refine',
@@ -268,7 +272,7 @@ const tabsData = [
     ),
     title: 'Contrôle et optimisation',
     description:
-      "Une fois l'intallation complété nous garantissons un contrôle et suivi quotidien des automatisations.\nActivez ou désactivez Alloclinic selon vos besoins"
+      "Une fois l'installation complétée, nous garantissons un contrôle et un suivi quotidiens des automatisations.\nActivez ou désactivez Alloclinic selon vos besoins"
   }
 ]
 
@@ -742,6 +746,8 @@ const HeroSection = () => {
       <div className='px-4 pt-[150px] sm:px-6 sm:pt-[100px] lg:px-8'>
         <h2 className='mx-auto max-w-7xl text-center font-[family-name:var(--font-montserrat)] text-2xl font-semibold md:text-3xl lg:text-4xl'>
           Plus prévisible qu’un agent IA.
+          <br />
+          Pas de données envoyées à OpenAI
         </h2>
       </div>
       <Features sections={deterministicSectionsData} />

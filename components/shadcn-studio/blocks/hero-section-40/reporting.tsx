@@ -31,7 +31,7 @@ const Reporting = () => {
         icon={
           <FileChartPieIcon />
         }
-        title="Récupération données d'appel"
+        title="Récupération des données d'appel"
         time='18 sec'
         showTimeBadge={false}
         showActionBadge={false}
@@ -41,11 +41,11 @@ const Reporting = () => {
         <div className='bg-muted space-y-2.5 rounded-lg px-2.5 py-3'>
           <div className='flex items-center gap-2'>
             <RefreshCcwDotIcon className='size-5 text-blue-600 dark:text-blue-400' />
-            <span className='text-muted-foreground text-sm'>Transcription de l'appel, audio, données du patient ...</span>
+            <span className='text-muted-foreground text-sm'>Transcription de l'appel, audio et données du patient...</span>
           </div>
           <div className='flex items-center gap-2'>
             <DatabaseIcon className='size-5 text-green-600 dark:text-green-400' />
-            <span className='text-muted-foreground text-sm'>Transfert des imports dans base de données</span>
+            <span className='text-muted-foreground text-sm'>Transfert des informations dans la base de données</span>
           </div>
         </div>
         {/* Arrow for large screens */}
@@ -61,7 +61,7 @@ const Reporting = () => {
           <FileSpreadsheetIcon />
         }
         title="Génération du Tableau d'appel"
-        description="Transfère automatisé des données vers le tableau d'appel"
+        description="Transfert automatisé des données vers le tableau d'appel"
         time='1.1 sec'
         showTimeBadge={false}
         delay={2.4}
@@ -74,7 +74,7 @@ const Reporting = () => {
               alt='Sheets logo'
               className='size-4.5'
             />
-            <span className='text-muted-foreground text-sm'>Données de l&apos;appel et du patient collecté</span>
+            <span className='text-muted-foreground text-sm'>Données de l&apos;appel et du patient collectées</span>
           </div>
           <div className='flex items-center gap-2'>
             <FileTextIcon className='size-4.5 text-orange-500 dark:text-orange-400' />

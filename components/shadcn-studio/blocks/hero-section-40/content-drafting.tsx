@@ -144,7 +144,7 @@ const ContentDrafting = () => {
           className='relative text-base md:w-[360px]'
         >
           <div className='bg-muted rounded-lg px-2.5 py-3'>
-            <p className='text-muted-foreground text-sm'>Réponse retourné au patient en accord avec les information de la base de données</p>
+            <p className='text-muted-foreground text-sm'>Réponse retournée au patient en accord avec les informations de la base de données</p>
           </div>
           <div className='bg-muted rounded-lg px-2.5 py-3'>
             <div className='inline-flex items-center gap-2 rounded-md border border-black/80 px-2 py-1 dark:border-white/80'>

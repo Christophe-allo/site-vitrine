@@ -199,7 +199,7 @@ const DataSync = () => {
               <span className='text-muted-foreground text-sm'>Dashboard Alloclinic</span>
             </div>
           </div>
-          <p className='text-muted-foreground text-sm'>Message accessible dans le daschboard Alloclinic et envoyé par mail au cabinet.</p>
+          <p className='text-muted-foreground text-sm'>Message accessible dans le dashboard Alloclinic et envoyé par mail au cabinet.</p>
 
           {/* Arrow for large screens */}
           <motion.svg

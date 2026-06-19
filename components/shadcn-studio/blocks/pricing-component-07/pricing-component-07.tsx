@@ -112,11 +112,13 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
             delay={0.1}
             transition={{ duration: 0.5 }}
           >
-            <span className='text-2xl font-bold sm:text-3xl lg:text-4xl'>219 €/mois</span>
+            <span className='text-2xl font-bold sm:text-3xl lg:text-4xl'>379 €/mois</span>
             <br />
-            Appels illimités
+            Appels et SMS illimités
             <br />
-            <span className='font-bold text-blue-600'>2 mois d&apos;essai, satisfait ou 100 % remboursé</span>
+            Développement sur mesure en fonction des spécificités de votre cabinet.
+            <br />
+            <span className='font-bold text-blue-600'>2 mois d&apos;essai satisfait ou remboursé</span>
           </MotionPreset>
         </div>
         <div className='flex flex-col gap-6 lg:flex-row'>
@@ -157,7 +159,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
                       </p>
                       {plan.id === 'free' ? (
                         <p className='font-[family-name:var(--font-montserrat)] text-xs font-semibold text-gray-500'>
-                          Appels illimités
+                          Appels et SMS illimités
                         </p>
                       ) : plan.id === 'business' ? (
                         <p className='font-[family-name:var(--font-montserrat)] text-xs font-semibold text-gray-500'>
@@ -205,7 +207,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
                   : selectedPlanData.name}
               </h3>
               {selectedPlanData.id === 'free' ? (
-                <p className='text-base text-white'>Appels illimités</p>
+                <p className='text-base text-white'>Appels et SMS illimités</p>
               ) : selectedPlanData.id === 'business' ? (
                 <p className='text-base text-white'>750 appels par mois</p>
               ) : selectedPlanData.subtitle ? (

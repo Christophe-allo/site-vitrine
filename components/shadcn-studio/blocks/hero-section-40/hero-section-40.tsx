@@ -696,6 +696,8 @@ const HeroSection = () => {
                 <br />
                 Gestion des rappels, annulations et déplacements de rendez-vous.
                 <br />
+                Développement sur mesure en fonction des spécificités de votre cabinet.
+                <br />
                 Temps de consultation en fonction motif du rendez-vous.
                 <br />
                 Hiérarchisation des urgences.

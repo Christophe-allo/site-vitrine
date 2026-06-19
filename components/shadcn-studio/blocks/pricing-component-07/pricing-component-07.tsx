@@ -112,7 +112,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
             delay={0.1}
             transition={{ duration: 0.5 }}
           >
-            <span className='text-2xl font-bold sm:text-3xl lg:text-4xl'>379 €/mois</span>
+            <span className='text-2xl font-bold sm:text-3xl lg:text-4xl'>279 €/mois</span>
             <br />
             Appels et SMS illimités
             <br />

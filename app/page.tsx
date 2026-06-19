@@ -76,7 +76,7 @@ const plans: Plan[] = [
     id: 'free',
     name: 'Mesages confirmation via Whatsapp',
     subtitle: '',
-    price: '379 €',
+    price: '279 €',
     accounts: '',
     features: [
       'Audit des logiciels de télésecrétariat (offert)',

@@ -114,7 +114,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
           >
             <span className='text-2xl font-bold sm:text-3xl lg:text-4xl'>279 €/mois</span>
             <br />
-            Appels et SMS illimités
+            Appels illimités
             <br />
             Paramétrages et optimisations en fonction des spécificités de votre cabinet
             <br />
@@ -159,7 +159,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
                       </p>
                       {plan.id === 'free' ? (
                         <p className='font-[family-name:var(--font-montserrat)] text-xs font-semibold text-gray-500'>
-                          Appels et SMS illimités
+                          Appels illimités
                         </p>
                       ) : plan.id === 'business' ? (
                         <p className='font-[family-name:var(--font-montserrat)] text-xs font-semibold text-gray-500'>
@@ -207,7 +207,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
                   : selectedPlanData.name}
               </h3>
               {selectedPlanData.id === 'free' ? (
-                <p className='text-base text-white'>Appels et SMS illimités</p>
+                <p className='text-base text-white'>Appels illimités</p>
               ) : selectedPlanData.id === 'business' ? (
                 <p className='text-base text-white'>750 appels par mois</p>
               ) : selectedPlanData.subtitle ? (

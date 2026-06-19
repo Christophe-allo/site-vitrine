@@ -698,7 +698,7 @@ const HeroSection = () => {
                 <br />
                 Paramétrages et optimisations en fonction des spécificités de votre cabinet
                 <br />
-                Temps de consultation en fonction motif du rendez-vous.
+                Temps de consultation en fonction du motif du rendez-vous.
                 <br />
                 Hiérarchisation des urgences.
               </p>

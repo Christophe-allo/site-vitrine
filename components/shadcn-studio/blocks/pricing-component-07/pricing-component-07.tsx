@@ -116,7 +116,7 @@ const Pricing = ({ plans }: { plans: Plan[] }) => {
             <br />
             Appels et SMS illimités
             <br />
-            Développement sur mesure en fonction des spécificités de votre cabinet.
+            Paramétrages et optimisations en fonction des spécificités de votre cabinet
             <br />
             <span className='font-bold text-blue-600'>2 mois d&apos;essai satisfait ou remboursé</span>
           </MotionPreset>

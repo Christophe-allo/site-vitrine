@@ -81,7 +81,7 @@ const plans: Plan[] = [
     features: [
       'Audit des logiciels de télésecrétariat (offert)',
       'Installation Alloclinic (offerte)',
-      'Développement sur mesure adapté à votre flux de travail',
+      'Paramétrages en fonction des spécificités de votre cabinet',
       'Appels illimités',
       'SMS de confirmation de rendez-vous',
       'SMS de rappel de rendez-vous',

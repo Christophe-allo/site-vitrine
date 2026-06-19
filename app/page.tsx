@@ -2,7 +2,6 @@ import Header from "@/components/shadcn-studio/blocks/hero-section-40/header"
 import HeroSection from "@/components/shadcn-studio/blocks/hero-section-40/hero-section-40"
 import type { Navigation } from "@/components/shadcn-studio/blocks/hero-section-40/hero-navigation"
 import ContactUs from "@/components/shadcn-studio/blocks/contact-us-page-12/contact-us-page-12"
-import Pricing, { type Plan } from "@/components/shadcn-studio/blocks/pricing-component-07/pricing-component-07"
 import {
   BellRingIcon,
   FileSpreadsheetIcon,
@@ -65,62 +64,6 @@ const navigationData: Navigation[] = [
     title: "Installation",
     href: "#installation",
   },
-  {
-    title: "Tarifs",
-    href: "#pricing",
-  },
-]
-
-const plans: Plan[] = [
-  {
-    id: 'free',
-    name: 'Mesages confirmation via Whatsapp',
-    subtitle: '',
-    price: '279 €',
-    accounts: '',
-    features: [
-      'Audit des logiciels de télésecrétariat (offert)',
-      'Installation Alloclinic (offerte)',
-      'Paramétrages en fonction des spécificités de votre cabinet',
-      'Appels illimités',
-      'Confirmation de rendez-vous (en option)',
-      'Tableau d\'appels: statistiques, transcriptions, audios, messages',
-      'Deterministic Conversational Mapping ©',
-      'Connexion à Doctolib',
-      'Formation assistants',
-    ],
-    buttonText: 'Voir démo'
-  },
-  {
-    id: 'custom',
-    name: 'Audit logiciels télésecrétariat',
-    subtitle: '',
-    price: '2399 €',
-    accounts: '',
-    features: [
-      'Audit des logiciels de télésecrétariat en place',
-      'Analyse des usages et des points de friction',
-      'Vérification des flux entre agendas, téléphonie et secrétariat',
-      'Recommandations d\'optimisation logicielle',
-      'Plan d\'action priorisé avec compte rendu détaillé',
-    ],
-    buttonText: 'Nous contacter'
-  },
-  {
-    id: 'trial',
-    name: '2 mois d’essai satisfait ou remboursé',
-    subtitle: '',
-    price: '',
-    accounts: '',
-    features: [
-      'Remboursement en intégralité des frais engagés par le cabinet',
-      'Audit, installation et paramétrage inclus dans la période d’essai',
-      'Validation du déploiement uniquement si le cabinet est satisfait',
-      'Accompagnement opérationnel pendant toute la phase d’essai',
-      'Compte-rendu des résultats sur vos appels pris par Alloclinic',
-    ],
-    buttonText: 'Nous contacter'
-  }
 ]
 
 export default function Home() {
@@ -129,9 +72,6 @@ export default function Home() {
       <Header navigationData={navigationData} />
       <main className="flex flex-col">
         <HeroSection />
-        <div id="pricing" className="scroll-mt-20">
-          <Pricing plans={plans} />
-        </div>
         <ContactUs />
       </main>
     </div>
